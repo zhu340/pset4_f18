@@ -1,6 +1,6 @@
-clc
-clear all
-close all
+% clc
+% clear all
+% close all
 
 figure;
 xlim([0,5580]);
@@ -30,9 +30,9 @@ rectangle('Position',[3100,280,200,100],'FaceColor',[0 0 0],'EdgeColor','k');
 rectangle('Position',[5490,0,90,840],'FaceColor',[0 0 0],'EdgeColor','k');
 rectangle('Position',[5490,960,90,540],'FaceColor',[0 0 0],'EdgeColor','k');
 
-%One way to left
-one_way_l = [280,80,1700,100];
-rectangle('Position',[280,80,1700,100],'FaceColor',[0 0.3 0.7],'EdgeColor','r');
+% %One way to left
+% one_way_l = [280,80,1700,100];
+% rectangle('Position',[280,80,1700,100],'FaceColor',[0 0.3 0.7],'EdgeColor','r');
 
 % Initial state
 rectangle('Position',[2000,1420,85,80],'FaceColor',[0 0.7 0.5],'EdgeColor','r');
