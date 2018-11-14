@@ -1,4 +1,4 @@
-function [idx,min_pt] = get_closest(V,target)
+function [idx,min_pt,min_dist] = get_closest(V,target)
 %V is a Nx3 with each row [x,y,theta] represents the state of the point
 %target is 1x2 with [x,y] reprsents the location
 %Return both the minmum distance and the point
@@ -13,9 +13,9 @@ for r = 1:size(V,1)
 end
 
 
-[~, idx] = min(dists);
+[min_sqr, idx] = min(dists);
 
-% min_dist = sqrt(min_sqr);
+min_dist = sqrt(min_sqr);
 min_pt = V(idx,:);
 
 end
