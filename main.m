@@ -1,12 +1,3 @@
-% function [U,Nodes] = get_traj(init,target,r,d,dt,xMax,yMax)
-%init:Initial state
-%traget:target state
-%r: wheel radius or 20
-%d: robot width or 85
-%dt: sampling time
-%xMax,yMax: map boundries
-%U: Nx2 matrix representing set of control inputs with each row being one u
-%traj: set of trajectory with each row being one x
 clc
 clear all
 close all
@@ -170,11 +161,6 @@ for i = 1:size(newpath,1)-1
 end
 
 
-% end
 
-% run('test.m');
-% hold on;
 plot(path(:,1),path(:,2),'c')
 plot(newpath(:,1),newpath(:,2),'r')
-
-%[~,traj] = get_traj([2000,1420,-pi/2],[3000,280,pi/2],0,0,0,5580,1500);
