@@ -35,7 +35,9 @@ rectangle('Position',[5490,960,90,540],'FaceColor',[0 0 0],'EdgeColor','k');
 % rectangle('Position',[280,80,1700,100],'FaceColor',[0 0.3 0.7],'EdgeColor','r');
 
 % Initial state
-rectangle('Position',[2050,1400,85,80],'FaceColor',[0 0.7 0.5],'EdgeColor','r');
+% rectangle('Position',[2050,1400,85,80],'FaceColor',[0 0.7 0.5],'EdgeColor','r');
+rectangle('Position',[130,900,85,80],'FaceColor',[0 0.7 0.5],'EdgeColor','r');
+% rectangle('Position',[2300,95,85,80],'FaceColor',[0 0.7 0.5],'EdgeColor','r');
 
 % Goal 1
 rectangle('Position',[3080,280,100,100],'FaceColor',[1 1 0],'EdgeColor','r');

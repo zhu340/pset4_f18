@@ -3,7 +3,12 @@ clear all
 close all
 
 init = [2100,1400,-pi/2];
+% init = [130,930,pi/4];
+% init = [2300,95,pi/4];
+
 target = [3100,320,pi/2];
+% target = [5500,900,pi/2];
+
 r = 20;
 d = 115;
 R = 115/2;
@@ -11,7 +16,7 @@ xMax = 5580;
 yMax = 1500;
 
 
-sample_rate = 30;
+sample_rate = 5;
 expand_dis = 25;
 
 Nodes(1).value = init;
@@ -81,7 +86,7 @@ while 1
     pause(0.001)
     
     %% Check goal
-    if sqrt((value(1) - target(1))^2 + (value(2) - target(2))^2) < 2 %%&& abs(value(3)-target(3)) < (1/3 * pi)
+    if sqrt((value(1) - target(1))^2 + (value(2) - target(2))^2) < 2 && (abs(value(3)-target(3)) < (1/90 * pi) || abs(value(3)+target(3)) < (1/90 * pi))
         fprintf('reached.\n')
         break
     end
